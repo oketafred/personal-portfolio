@@ -1,7 +1,8 @@
 <template>
   <div>
-    <b-navbar toggleable="lg" type="dark" variant="dark">
-      <b-navbar-brand href="#">Oketa Fred</b-navbar-brand>
+    <b-navbar class="navbar-custom" toggleable="lg" type="dark" variant="dark">
+      <b-container>
+        <b-navbar-brand href="#"><vue-fontawesome icon="code" size="2" color="lightgray"></vue-fontawesome> <span class="my-brand-name">Oketa Fred</span></b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>        
         <b-navbar-nav class="ml-auto">
@@ -21,6 +22,7 @@
           </b-nav-form>
         </b-navbar-nav>
       </b-collapse>
+      </b-container>
     </b-navbar>
   </div>
 </template>
@@ -33,6 +35,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.navbar-custom {
+  background-color: #434190 !important;
+}
 .facebook-icon {
   background-color: #4267b2;
   padding: 10px 13px;
@@ -56,5 +61,8 @@ export default {
   padding: 10px 12px;
   border: #959da5;
   border-radius: 50%;
+}
+.my-brand-name {
+  font-size: 25px;
 }
 </style>
